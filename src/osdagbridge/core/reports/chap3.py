@@ -128,10 +128,7 @@ def ch3_loads(input_dict):
             braking_force_t = IRC6_2017.cl_211_2_braking_force(lanes_int)
             braking_force_kN = braking_force_t * 9.81
 
-            braking_force_value = (
-                f"{braking_force_kN:.2f} "
-                f"({braking_force_t:.2f} tonnes)"
-            )
+            braking_force_value = f"{braking_force_kN:.2f}"
 
         except Exception:
             braking_force_value = "N/A"
