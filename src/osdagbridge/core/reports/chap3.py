@@ -311,7 +311,15 @@ This section summarizes all loads applied to the bridge and the load combination
 \hline
 \textnormal{Braking Load (IRC 6)} & """ + _tex(braking_force_str) + r""" \\[6pt]
 \hline
-\textnormal{Footpath Live Load (if applicable)} & """ + (_render_value(input_dict, KEY_LL_FOOTPATH_PRESSURE_VALUE, ' kN/m\\textsuperscript{2}')) + r""" \\[6pt]
+\end{longtable}
+
+\vspace{1em}
+\begin{longtable}{|L{5.5cm}|p{10.0cm}|}
+\caption{\textbf{Footway Load}}
+\hline
+\textbf{Parameter} & \textbf{Value} \\
+\hline
+\textnormal{Footway Live Load} & """ + _tex(fp_str) + r""" \\[6pt]
 \hline
 \end{longtable}
 
